@@ -1,0 +1,246 @@
+[
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "DDHLJ",
+        "topic": "一、短对话理解（共3小题，每小题1分，共3分）",
+        "desc": "你将听到三段短对话，每段对话后面设有一道题，请从题中所给的 A、B、C 三个选项中选出最佳选项，并用鼠标点击该选项。听完每段对话后，你将有 10 秒钟的时间来选择最佳选项。每段对话播放一遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SYM_DDHLJ.mp3"
+      },
+      {
+        "directive": "render",
+        "prerender": true
+      },
+      {
+        "directive": "wait",
+        "duration": 3000,
+        "tip": "请等待"
+      },
+      {
+        "directive": "wait",
+        "duration": 5000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 3,
+        "flow": [{
+            "directive": "render"
+          },
+          {
+            "directive": "play",
+            "tip": "正在读题"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "CDHLJ",
+        "topic": "二、长对话理解（共6小题，每小题1分，共6分）",
+        "desc": "你将听到两段长对话，每段对话后面设有三道题，请从题中所给的A、B、C 三个选项中选出最佳选项，并用鼠标点击该选项。听完对话后，你将有 15 秒钟的时间来选择最佳选项。对话播放两遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SYM_CDHLJ.mp3"
+      },
+      {
+        "loop": 2,
+        "flow": [{
+            "directive": "render",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/new_shengyang/SYM_CDHLJ_TIP${loop}.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 3000,
+            "tip": "请等待"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 15000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "DWLJ",
+        "topic": "三、短文理解（共3小题，每小题1分，满分3分）",
+        "desc": "你将听到一段短文，短文后面设有三道题，请从题中所给的 A、B、C 三个选项中选出最佳选项，并用鼠标点击该选项。听完短文后，你将有 15 秒钟的时间来选择最佳选项。短文播放两遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SYM_DWLJ.mp3"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+            "directive": "render"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 3000,
+            "tip": "请等待"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 15000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "LD",
+        "topic": "四、短文朗读（共1小题，每小题4分，满分4分）",
+        "desc": "你将有 30 秒钟的时间阅读屏幕上的一篇短文，并做逐句朗读准备。在朗读时要注意语音、语调、连读、辅音连缀和失去爆破等。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SYM_DWLD.mp3"
+      },
+      {
+        "directive": "wait",
+        "duration": 30000,
+        "tip": "请准备"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SY_begin.mp3",
+        "tip": "提示音"
+      },
+      {
+        "directive": "record",
+        "duration": 60000,
+        "tip": "录音中"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SY_end.mp3",
+        "tip": "停止回答"
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "sy_thhd",
+        "topic": "五、情景问答（4分）",
+        "desc": "你将有 30 秒钟的时间阅读屏幕上的四个问题，并做答题准备。你将听到一段短文，短文读两遍。之后，在听到“开始录音”的信号后，根据屏幕的提示用英语依序进行回答，每个问题问一遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SYM_QJWD.mp3"
+      },
+      {
+        "directive": "wait",
+        "duration": 30000,
+        "tip": "请准备"
+      },
+      {
+        "directive": "play",
+        "audio": "",
+        "tip": "第一遍"
+      },
+      {
+        "directive": "wait",
+        "duration": 10000,
+        "tip": "请等待"
+      },
+      {
+        "directive": "play",
+        "audio": "",
+        "tip": "第二遍"
+      },
+      {
+        "loop": 4,
+        "flow": [{
+            "directive": "event",
+            "name": "sy_thhd"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/new_shengyang/SY_begin.mp3",
+            "tip": "开始录音"
+          },
+          {
+            "directive": "record",
+            "duration": 10000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/new_shengyang/SY_end.mp3",
+            "tip": "停止录音"
+          }
+        ]
+      }
+    ]
+  }
+]

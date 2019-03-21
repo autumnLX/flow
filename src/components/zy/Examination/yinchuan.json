@@ -1,0 +1,390 @@
+{
+  "loop": 1,
+  "flow": [{
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_tlxt",
+          "topic": "一、听力选图（共5小题，每小题1分，共5分）",
+          "desc": "听对话选出正确的图画，每题读2遍。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_TLXT.mp3"
+        },
+        {
+          "loop": 5,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "阅读题目"
+            },
+            {
+              "loop": 2,
+              "flow": [{
+                "directive": "play",
+                "tip": "听语音"
+              }]
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "请选择"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_tlxd1",
+          "topic": "二、听力选答（共5小题，每小题1分，共5分）",
+          "desc": "听句子选择恰当的答语，每题读2遍。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_TLXD1.mp3"
+        },
+        {
+          "loop": 5,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "阅读题目"
+            },
+            {
+              "loop": 2,
+              "flow": [{
+                "directive": "play",
+                "tip": "听语音"
+              }]
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "请选择"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_tlxd2",
+          "topic": "三、听力选答（共5小题，每小题1分，共5分）",
+          "desc": "听对话及对话后的问题，然后选择正确答案，每题读2遍。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_TLXD2.mp3"
+        },
+        {
+          "loop": 5,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "阅读题目"
+            },
+            {
+              "loop": 2,
+              "flow": [{
+                "directive": "play",
+                "tip": "听语音"
+              }]
+            },
+            {
+              "directive": "wait",
+              "duration": 5000,
+              "tip": "请选择"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_tdhdt",
+          "topic": "四、听对话答题（共5小题，每小题1分，共5分）",
+          "desc": "听对话选择正确答案，本题共分2部分，每部分读2遍。第一部分，听对话，回答第16和17小题。第二部分，听对话，回答第18、19和20小题。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_TDHDT.mp3"
+        },
+        {
+          "loop": 2,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_TDHDT_TIP${loop}.mp3",
+              "tip": "听指令"
+            },
+            {
+              "directive": "wait",
+              "duration": [10000, 15000],
+              "tip": "准备中"
+            },
+            {
+              "loop": 2,
+              "flow": [{
+                "directive": "play",
+                "tip": "听语音"
+              }]
+            },
+            {
+              "directive": "wait",
+              "duration": [10000, 15000],
+              "tip": "答题中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_tdhtk",
+          "topic": "五、听对话后填空（共5小题，每小题1分，共5分）",
+          "desc": "听短文，根据表格提示，完成第21至25小题。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_TDHHTK.mp3"
+        },
+        {
+          "loop": 1,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 20000,
+              "tip": "准备中"
+            },
+            {
+              "loop": 3,
+              "flow": [{
+                "directive": "play",
+                "tip": "听语音"
+              }]
+            },
+            {
+              "directive": "wait",
+              "duration": 30000,
+              "tip": "答题中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_dwld",
+          "topic": "六、课文朗读（共1小题，每小题3分，共3分）",
+          "desc": "请以适当音量，语调，停顿，语音朗读以下课文，你将有60秒钟的时间熟悉屏幕上的课文，并作答题准备，在听到倒计时结束的提示音后，请将屏幕上的课文朗读一遍，时间为60秒钟。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render"
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_SPEAKING_GUIDE.mp3"
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_KWLD.mp3"
+        },
+        {
+          "loop": 1,
+          "flow": [{
+              "directive": "wait",
+              "duration": 60000,
+              "tip": "准备中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_begin.mp3"
+            },
+            {
+              "directive": "record",
+              "duration": 60000,
+              "tip": "录音中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_end.mp3",
+              "tip": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_qjwd",
+          "topic": "七、情景问答（共2小题，每小题1.5分，共3分）",
+          "desc": "本部分共有2个小题，每个问题你有10秒钟的时间阅读屏幕上的情景提示，并作答题准备，在听到倒计时结束的提示音后，请根据情景提示对页面上所提的问题用英语进行回答，时间为10秒钟。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_QJWD.mp3"
+        },
+        {
+          "loop": 1,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 10000,
+              "tip": "准备中"
+            },
+            {
+              "directive": "play",
+              "tip": "听录音"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_begin.mp3"
+            },
+            {
+              "directive": "record",
+              "duration": 10000,
+              "tip": "录音中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_end.mp3",
+              "tip": ""
+            },
+            {
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 10000,
+              "tip": "准备中"
+            },
+            {
+              "directive": "play",
+              "audioIndex": 2,
+              "tip": "听录音"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_begin.mp3"
+            },
+            {
+              "directive": "record",
+              "duration": 10000,
+              "tip": "录音中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_end.mp3",
+              "tip": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "loop": 1,
+      "flow": [{
+          "directive": "enter",
+          "type": "yc_htjs",
+          "topic": "八、话题简述（共1小题，每小题4分，共4分）",
+          "desc": "你将有90秒钟的时间阅读屏幕上的中文提示，并作答题准备，在听到倒计时结束的提示音后，请用英语进行话题简述，你的表述应不少于5句话，时间为70秒。",
+          "tip": "听指令"
+        },
+        {
+          "directive": "render",
+          "prerender": true
+        },
+        {
+          "directive": "play",
+          "audio": "/web/static/examination/YC_HTJS.mp3"
+        },
+        {
+          "loop": 1,
+          "flow": [{
+              "directive": "render"
+            },
+            {
+              "directive": "wait",
+              "duration": 90000,
+              "tip": "准备中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_begin.mp3"
+            },
+            {
+              "directive": "record",
+              "duration": 70000,
+              "tip": "录音中"
+            },
+            {
+              "directive": "play",
+              "audio": "/web/static/examination/YC_end.mp3",
+              "tip": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+[
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "js_tdhxz",
+        "topic": "一、听对话回答问题（计10分）",
+        "desc": "本部分共有10道小题，每小题你将听到一段对话，每段对话听两遍。在听每段对话前，你将有5秒钟的时间阅读题目；听完后，你还有5秒钟的时间在屏幕上点击你认为最合适的备选答案。在听到“嘀”的信号后，进入下一小题。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_TDHHDWT.mp3",
+        "tip": "放音"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+      },
+      {
+        "directive": "wait",
+        "duration": 5000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 10,
+        "flow": [
+          {
+            "directive": "event",
+            "name": "js_tdhxz"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 5000,
+            "tip": "请阅读题目"
+          },
+          {
+            "directive": "play",
+            "tip": "第一遍"
+          },
+          {
+            "directive": "play",
+            "tip": "第二遍"
+          },
+          {
+            "directive": "wait",
+            "duration": 5000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "js_tdhdwdt",
+        "topic": "二、听对话和短文答题（计10分）",
+        "desc": "你将听到一段对话和两篇短文，各听两遍。听每段对话或短文前，你将有时间阅读相关小题，每小题5秒钟；听完后，每小题你仍有5秒钟的时间在屏幕上点击你认为最合适的备选答案。听一段对话，回答第11到12小题。答题完毕，请等待“嘀”的信号进入第一篇短文。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "type": "tdhdwdt",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_TDHHDWDT_1.mp3",
+        "tip": "放音"
+      },
+      {
+        "directive": "wait",
+        "duration": 2000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请阅读相关小题"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第一遍"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第二遍"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      },
+      {
+        "directive": "render",
+        "type": "tdhdwdt",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_TDHHDWDT_2.mp3",
+        "desc": "听第一篇短文回答第13~15小题。请根据短文内容选择正确答案，完成信息记录表。答题完毕请等待“嘀”的信号，进入下一篇短文。",
+        "tip": "放音"
+      },
+      {
+        "directive": "wait",
+        "duration": 3000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 15000,
+            "tip": "请阅读相关小题"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第一遍"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第二遍"
+          },
+          {
+            "directive": "wait",
+            "duration": 15000,
+            "tip": "请选择"
+          }
+        ]
+      },
+      {
+        "directive": "render",
+        "type": "tdhdwdt",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_TDHHDWDT_3.mp3",
+        "desc": "听第二篇短文回答第16~20小题。答题完毕请等待“嘀”的信号，进入测试的第三部分。",
+        "tip": "放音"
+      },
+      {
+        "directive": "wait",
+        "duration": 2000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 25000,
+            "tip": "请阅读相关小题"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第一遍"
+          },
+          {
+            "directive": "play",
+            "type": "tdhdwdt",
+            "tip": "第二遍"
+          },
+          {
+            "directive": "wait",
+            "duration": 25000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "js_dwld",
+        "topic": "三、课文朗读（计3分）",
+        "desc": "你将有1分钟的时间熟悉屏幕上的短文。在听到开始录音的提示后，请将短文朗读一遍，时间为1分半钟。读完之后请等待“嘀”的信号，进入测试的第四部分。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_LDDW.mp3",
+        "tip": "放音"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "wait",
+            "duration": 60000,
+            "tip": "准备中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/START.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 90000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/END.mp3",
+            "tip": " "
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "js_qjwd",
+        "topic": "四、情景问答（计2分）",
+        "desc": "你有10秒钟的时间阅读屏幕上的情景提示。之后你将听到两个问题，请根据情景提示的内容用英语进行问答。注意：每个问题问两遍，每题的答题时间为15秒钟。回答完毕后，请等待:“嘀”的信号，进入测试的第五部分。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_QJWD.mp3",
+        "tip": "放音"
+      },
+      {
+        "loop": 2,
+        "flow": [
+          {
+            "directive": "render"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "准备中"
+          },
+          {
+            "directive": "play",
+            "tip": "问题${loop}"
+          },
+          {
+            "directive": "play",
+            "tip": "问题${loop}"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/START.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 15000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/END.mp3",
+            "tip": " "
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "js_htjs",
+        "topic": "五、话题简述（计5分）",
+        "desc": "你有2分钟的时间阅读屏幕上的要点提示，并作答题准备。在听到开始录音的提示音后，请用英语进行话题表述，你的表述应不少于7句话，时间为1分半钟。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/jiangsuzhongkao/JS_HTJS.mp3",
+        "tip": "放音"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render"
+          },
+          {
+            "directive": "wait",
+            "duration": 120000,
+            "tip": "准备中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/START.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 90000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/END.mp3",
+            "tip": " "
+          }
+        ]
+      }
+    ]
+  }
+]

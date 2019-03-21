@@ -1,0 +1,322 @@
+[{
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "topic": "第一部分听短对话回答问题（共5小题，每小题1分，满分5分）。",
+        "desc": "你将听到五组对话，每段对话听一遍。听对话前，你有 20 秒钟时间阅读所有小题。听完每组对话后，你还有 5 秒钟的时间在屏幕上点击你认为最合适的备选答案。在听到“嘟”的提示音后，进入下一小题。"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_TDDHHDWT.mp3",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "component": "tddhhd",
+        "id": 74
+      },
+      {
+        "directive": "wait",
+        "duration": 20000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 5,
+        "flow": [{
+            "directive": "emitEvent",
+            "name": "zb_tddhhd",
+            "message": "${loop-1}"
+          },
+          {
+            "directive": "play",
+            "tip": "听语音"
+          },
+          {
+            "directive": "play",
+            "tip": "听语音",
+            "next": true
+          },
+          {
+            "directive": "wait",
+            "duration": 5000,
+            "tip": "请选择"
+          },
+          {
+            "skip": "${loop === 5}",
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "topic": "第二部分听长对话回答问题（共5小题，每小题1分，满分5分）",
+        "desc": "你将听到一段对话，对话听两遍。听对话前，你有20秒钟时间阅读所有小题。听完对话后，每小题你还有 5 秒钟的时间在屏幕上点击你认为最合适的备选答案。在听到“嘟”的提示音后，进入下一小题。"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_TCDHHDWT.mp3",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "component": "tcdhhd",
+        "tip": "放音",
+        "id": 75
+      },
+      {
+        "directive": "wait",
+        "duration": 20000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+          "directive": "play",
+          "tip": "第一遍放音"
+        }, {
+          "directive": "play",
+          "tip": "第二遍放音"
+        }]
+      },
+      {
+        "loop": 5,
+        "flow": [{
+            "directive": "emitEvent",
+            "name": "zb_tcdhhd",
+            "message": "${loop-1}"
+          },
+          {
+            "directive": "play",
+            "tip": "听语音"
+          },
+          {
+            "directive": "wait",
+            "duration": 5000,
+            "tip": "请选择"
+          },
+          {
+            "skip": "${loop === 5}",
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "topic": "第三部分听短文回答问题（共 5 小题，每小题1分，满分5分）",
+        "desc": "你将听到一篇短文，短文听两遍。听短文前，你有20秒钟时间阅读所有小题。听完短文后，每小题你还有5秒钟的时间在屏幕上点击你认为最合适的备选答案。在听到“嘟”的提示音后，进入下一小题。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_TDWHDWT.mp3",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "component": "tdwhd",
+        "id": 76
+      },
+      {
+        "directive": "wait",
+        "duration": 20000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 1,
+        "flow": [{
+          "directive": "play",
+          "tip": "第一遍放音"
+        }, {
+          "directive": "play",
+          "tip": "第二遍放音"
+        }]
+      },
+      {
+        "loop": 5,
+        "flow": [{
+            "directive": "emitEvent",
+            "name": "zb_tdwhd",
+            "message": "${loop-1}"
+          },
+          {
+            "directive": "play",
+            "tip": "听语音"
+          },
+          {
+            "directive": "wait",
+            "duration": 5000,
+            "tip": "请选择"
+          },
+          {
+            "skip": "${loop === 5}",
+            "directive": "play",
+            "audio": "/web/static/examination/jiangsuzhongkao/DI.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "topic": "第四部分朗读短文（满分5分）",
+        "desc": "你有90秒钟的时间熟悉屏幕上的短文，并作朗读准备。在听到“开始录音”的信号后，请在90秒钟内朗读短文一遍。"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_LDDW.mp3",
+        "tip": "放音"
+      },
+      {
+        "directive": "render",
+        "component": "ld",
+        "id": 56
+      },
+      {
+        "directive": "wait",
+        "duration": 90000,
+        "tip": "请准备"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SY_begin.mp3",
+        "tip": ""
+      },
+      {
+        "directive": "record",
+        "duration": 90000,
+        "tip": "正在录音"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/new_shengyang/SY_end.mp3",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "topic": "第五部分 情景问答（共3小题，每小题2分，满分6分）",
+        "desc": "你将听到一段英文对话，对话听两遍。在听完对话并做20秒钟准备后，请根据听到的内容和屏幕提示，用英语回答问题。每小题的作答时间为15秒钟。在听到“嘟”的提示音后，进入下一小题。"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_QJWD.mp3",
+        "tip": "放音"
+      },
+      {
+        "directive": "render",
+        "component": "qjwd",
+        "id": 77
+      },
+      {
+        "loop": 1,
+        "flow": [{
+          "directive": "play",
+          "tip": "第一遍放音"
+        }, {
+          "directive": "play",
+          "tip": "第二遍放音"
+        }]
+      },
+      {
+        "directive": "wait",
+        "duration": 20000,
+        "tip": "准备答题"
+      },
+      {
+        "loop": 3,
+        "flow": [{
+            "directive": "emitEvent",
+            "name": "zb_qjwd",
+            "message": "${loop-1}"
+          },
+          {
+            "directive": "play",
+            "tip": "请听语音"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/new_shengyang/SY_begin.mp3",
+            "tip": ""
+          },
+          {
+            "directive": "record",
+            "duration": 15000,
+            "tip": "正在录音"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/new_shengyang/SY_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [{
+        "directive": "enter",
+        "type": "yc_htjs",
+        "topic": "第六部分 话题简述（满分4分）",
+        "desc": "你将听到一篇英文短文，短文听两遍，并在屏幕上看到该短文的汉语要点提示。在听完短文并做60秒钟准备后，请根据听到的内容和屏幕提示进行复述，复述内容需包含所有要点。录音时间为90秒。"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/zibo/ZB_HTJS.mp3",
+        "tip": "放音"
+      },
+      {
+        "directive": "render",
+        "component": "htjs",
+        "id": 78
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 60000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/YC_begin.mp3",
+            "tip": ""
+          },
+          {
+            "directive": "record",
+            "duration": 90000,
+            "tip": "正在录音"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/YC_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  }
+]

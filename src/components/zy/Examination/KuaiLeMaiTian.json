@@ -1,0 +1,119 @@
+[
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "THHD",
+        "topic": "一、听后回答（共5小题，每小题2分，共10分）",
+        "desc": "听对话，根据所听内容口头回答问题。在听到录音提示音后，你有10秒钟的时间作答，每段对话你将听两遍",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_THHD.mp3"
+      },
+      {
+        "loop": 5,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "听下面一段对话，回答第${loop}小题。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_tip${loop}.mp3"
+          },
+          {
+            "loop": 2,
+            "flow": [
+              {
+                "directive": "play",
+                "tip": "听语音"
+              }
+            ]
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_GUIDE1.mp3",
+            "desc": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+            "tip": " "
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_start.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 10000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "DWLD",
+        "topic": "二、短文朗读（共8分）",
+        "desc": "先浏览短文，然后完成朗读。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_DWLD_tip1.mp3"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "现在，你有90秒钟的时间浏览短文并做录音准备。"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_DWLD_tip2.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 90000,
+            "tip": "答题准备"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_DWLD_GUIDE1.mp3",
+            "desc": "下面请准备录音。听到录音提示音后，在2分钟内完成朗读",
+            "tip": "听指令"
+          },
+          {
+            "directive": "wait",
+            "duration": 2000
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_start.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 120000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "THXZ",
+        "topic": "一、听后选择（共8小题，每小题1.5分，共12分）",
+        "desc": "听对话或独白，根据所听内容从每题所给的A、B、C三个选项中选择最佳选项，并用鼠标点击该选项。听每段对话或独白前，你有5秒钟的时间阅读每小题。听完后，你有5秒钟的时间作答。每段对话或独白你将听两遍",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_THXZ.mp3"
+      },
+      {
+        "loop": 4,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "听下面一段对话，回答第${loop * 2 - 1}至第${loop * 2}小题，现在，你有10秒钟的时间阅读这两道小题。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THXZ_tip${loop}.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "阅读题目"
+          },
+          {
+            "loop": 2,
+            "flow": [
+              {
+                "directive": "play",
+                "tip": "听语音"
+              }
+            ]
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "THHD",
+        "topic": "二、听后回答（共5小题，每小题2分，共10分）",
+        "desc": "听对话，根据所听内容口头回答问题。在听到录音提示音后，你有10秒钟的时间作答，每段对话你将听两遍",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_THHD.mp3"
+      },
+      {
+        "loop": 5,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "听下面一段对话，回答第${loop}小题。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_tip${loop}.mp3"
+          },
+          {
+            "loop": 2,
+            "flow": [
+              {
+                "directive": "play",
+                "tip": "听语音"
+              }
+            ]
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_GUIDE1.mp3",
+            "desc": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+            "tip": " "
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_start.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 10000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "THJL",
+        "topic": "三、听后记录并转述信息（共两节：每节5分，共10分）",
+        "desc": "听短文，记录关键信息并转述短文内容。本大题共两节。第一节，听两遍短文，根据所听内容和提示，将所缺的关键信息填写在相应位置上。每空只需填写一个词。第二节，听第三遍短文，根据所听内容和提示进行转述。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_JLZS.mp3"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "现在你有1分钟的时间浏览提示信息。"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_JLZS_tip1.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 60000,
+            "tip": "阅读题目"
+          },
+          {
+            "loop": 2,
+            "flow": [
+              {
+                "directive": "play",
+                "tip": "听语音"
+              }
+            ]
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_JLZS_GUIDE1.mp3",
+            "desc": "下面，请在90秒钟内将所缺信息输入到指定的答题区域。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "wait",
+            "duration": 90000,
+            "tip": "请答题"
+          },
+          {
+            "directive": "render",
+            "desc": "第二节，请再听一遍短文，完成转述。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_JLZS_tip2.mp3"
+          },
+          {
+            "directive": "play",
+            "tip": "听语音"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_JLZS_GUIDE2.mp3",
+            "desc": "下面，你有2分钟的时间做转述准备。转述的开头已给出。",
+            "tip": "听指令"
+          },
+          {
+            "directive": "wait",
+            "duration": 120000,
+            "tip": "答题准备"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_JLZS_GUIDE3.mp3",
+            "desc": "下面，请准备录音。听到录音提示音后，请在120秒内完成转述",
+            "tip": "听指令"
+          },
+          {
+            "directive": "wait",
+            "duration": 2000
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_start.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 120000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "DWLD",
+        "topic": "四、短文朗读（共8分）",
+        "desc": "先浏览短文，然后完成朗读。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/BJ_DWLD_tip1.mp3"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render",
+            "desc": "现在，你有90秒钟的时间浏览短文并做录音准备。"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_DWLD_tip2.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 90000,
+            "tip": "答题准备"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_DWLD_GUIDE1.mp3",
+            "desc": "下面请准备录音。听到录音提示音后，在2分钟内完成朗读",
+            "tip": "听指令"
+          },
+          {
+            "directive": "wait",
+            "duration": 2000
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_start.mp3"
+          },
+          {
+            "directive": "record",
+            "duration": 120000,
+            "tip": "录音中"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/BJ_THHD_end.mp3",
+            "tip": ""
+          }
+        ]
+      }
+    ]
+  }
+]

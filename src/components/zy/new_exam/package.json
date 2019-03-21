@@ -1,0 +1,4 @@
+{
+  "main": "process.js",
+  "typings": "types/index.d.ts"
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "DDHLJ",
+        "topic": "一、短对话理解（共3小题，每小题1分，共3分）",
+        "desc": "你将有 30 秒钟的时间阅读屏幕上的一篇短文，并做逐句朗读准备。在朗读时要注意语音、语调、连读、辅音连缀和失去爆破等。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_DDHLJ.mp3"
+      },
+      {
+        "directive": "render",
+        "prerender": true
+      },
+      {
+        "directive": "wait",
+        "duration": 3000,
+        "tip": "请等待"
+      },
+      {
+        "directive": "wait",
+        "duration": 5000,
+        "tip": "请准备"
+      },
+      {
+        "loop": 3,
+        "flow": [
+          {
+            "directive": "render"
+          },
+          {
+            "directive": "play",
+            "tip": "正在读题"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "CDHLJ",
+        "topic": "二、长对话理解（共6小题，每小题1分，共6分）",
+        "desc": "听下面两段对话，每段对话后有几个小题，从题中所给的A、B、C三个选项中选出最佳选项，并用鼠标点击该选项。听完每段对话后，你将有10秒钟的时间来回答有关小题或阅读下一小题。每段对话读两遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_CDHLJ.mp3"
+      },
+      {
+        "loop": 2,
+        "flow": [
+          {
+            "directive": "render",
+            "tip": "听指令"
+          },
+          {
+            "directive": "play",
+            "audio": "/web/static/examination/SY_CDHLJ_TIP${loop}.mp3"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 3000,
+            "tip": "请等待"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "DWLJ",
+        "topic": "三、短文理解（共3小题，每小题1分，满分3分）",
+        "desc": "听下面一段独白并阅读后面几个小题，从题中所给的A、B、C三个选项中选出最佳选项，并用鼠标点击该选项。听完独白后，你将有10秒钟的时间来回答有关小题或阅读下一小题。本段独白读两遍。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_DWLJ.mp3"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请准备"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 3000,
+            "tip": "请等待"
+          },
+          {
+            "directive": "play",
+            "tip": "放音"
+          },
+          {
+            "directive": "wait",
+            "duration": 10000,
+            "tip": "请选择"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "GDYMF",
+        "topic": "四、跟读与模仿（共3小题，每小题1分，满分3分）",
+        "desc": "先听下面一整段独白，然后逐句跟读，并尽可能地模仿其语音和语调。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render",
+        "type": "gdymf",
+        "prerender": true
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_GDYMF.mp3"
+      },
+      {
+        "directive": "wait",
+        "duration": 3000,
+        "tip": "请等待"
+      },
+      {
+        "loop": 1,
+        "flow": [
+          {
+            "directive": "render",
+            "type": "gdymf",
+            "audioIdx": "total"
+          },
+          {
+            "directive": "play",
+            "tip": "题目说明"
+          },
+          {
+            "loop": 1,
+            "flow": [
+              {
+                "type": "gdymfLoop",
+                "loop": 1,
+                "flow": [
+                  {
+                    "directive": "render",
+                    "type": "gdymf",
+                    "audioIdx": "single",
+                    "prerender": true
+                  },
+                  {
+                    "directive": "play",
+                    "tip": "问题${loop}"
+                  },
+                  {
+                    "directive": "wait",
+                    "duration": 5000,
+                    "tip": "请准备"
+                  },
+                  {
+                    "directive": "play",
+                    "audio": "/web/static/examination/SY_begin.mp3",
+                    "tip": "提示音"
+                  },
+                  {
+                    "directive": "record",
+                    "duration": 10000,
+                    "tip": "录音中"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "loop": 1,
+    "flow": [
+      {
+        "directive": "enter",
+        "type": "LD",
+        "topic": "五、朗读（共1小题，每小题4分，满分4分）",
+        "desc": "朗读下面一段独白，注意语音、语调、连读、辅音连缀和失去爆破。",
+        "tip": "听指令"
+      },
+      {
+        "directive": "render"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_LD.mp3"
+      },
+      {
+        "directive": "wait",
+        "duration": 60000,
+        "tip": "请准备"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_begin.mp3",
+        "tip": "提示音"
+      },
+      {
+        "directive": "record",
+        "duration": 60000,
+        "tip": "录音中"
+      },
+      {
+        "directive": "play",
+        "audio": "/web/static/examination/SY_end.mp3",
+        "tip": "停止回答"
+      }
+    ]
+  }
+]

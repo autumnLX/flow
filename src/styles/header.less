@@ -1,0 +1,196 @@
+@container-width: 1000px;
+@image-base-url: '../assets';
+@shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #2c3e50;
+  overflow-y: scroll;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: @container-width;
+  height: 100px;
+  margin: 0 auto;
+
+  &>img {
+    height: 90%;
+  }
+
+  #personal {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      height: 30px;
+
+      img {
+        border-radius: 15px;
+      }
+    }
+
+    .dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0 10px;
+      }
+
+      i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('@{image-base-url}/app/arrow_close.png') no-repeat center;
+        transition: transform 400ms;
+      }
+
+      div {
+        position: absolute;
+        top: 19px;
+        right: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: height 400ms;
+
+        ul {
+          box-sizing: border-box;
+          width: 160px;
+          height: 131px;
+          padding-top: 10px;
+          margin-top: 10px;
+          background-image: url('@{image-base-url}/app/pop_bg.png');
+
+          li a {
+            display: block;
+            padding-left: 50px;
+            line-height: 60px;
+            color: #000;
+            background-repeat: no-repeat;
+            background-position: 20px center;
+
+            &:first-child {
+              border-bottom: 1px solid #dcdcdc;
+            }
+
+            &:hover {
+              color: #21bd73;
+            }
+
+            &.person {
+              background-image: url('@{image-base-url}/app/personal info_normal.png');
+
+              &:hover {
+                background-image: url('@{image-base-url}/app/personal info_active.png');
+              }
+            }
+
+            &.quit {
+              background-image: url('@{image-base-url}/app/ic_Logout_normal.png');
+
+              &:hover {
+                background-image: url('@{image-base-url}/app/ic_Logout_active.png');
+              }
+            }
+
+            &.password {
+              background-image: url('@{image-base-url}/teacher/ic_set.png');
+
+              &:hover {
+                background-image: url('@{image-base-url}/teacher/ic_set.png');
+              }
+            }
+
+            &.notice {
+              background-image: url('@{image-base-url}/teacher/icon_notice_dropdown.png');
+
+              &:hover {
+                background-image: url('@{image-base-url}/teacher/icon_notice.png');
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        span {
+          color: #21bd73;
+        }
+
+        i {
+          // background-image: url('@{image-base-url}/app/arrow_open.png');
+          transform: rotateZ(180deg);
+          
+        }
+
+        div {
+          display: block;
+          height: 141px;
+        }
+      }
+    }
+  }
+}
+
+#nav {
+  height: 50px;
+  box-shadow: @shadow;
+  background-color: #21bd73;
+
+  ul {
+    display: flex;
+    width: @container-width;
+    margin: 0 auto;
+
+    li {
+      flex: 1;
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+  
+        &.router-link-active,
+        &:hover {
+          background-color: #12a15e;
+          transition: background-color 400ms;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 0;
+  // background-image: url('@{image-base-url}/bg.png');
+
+  & > div {
+    flex: 1;
+    width: @container-width;
+    margin: 0px auto;
+
+    &.todo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      & > h1 {
+        font-size: 4rem
+      }
+    }
+  }
+}
